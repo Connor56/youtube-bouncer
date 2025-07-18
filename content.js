@@ -80,8 +80,8 @@ function loadBlockerModal(redirectReason) {
 
 function getInfo() {
   // selectors for Youtube video title and channel name
-  const videoTitleElement = document.querySelector("#title");
-  const channelNameElement = document.querySelector("#text");
+  const videoTitleElement = document.querySelector("h1.ytd-watch-metadata yt-formatted-string");
+  const channelNameElement = document.querySelector("ytd-channel-name a.yt-simple-endpoint");
 
   const bothElementsLoadedinDOM = videoTitleElement && channelNameElement;
 
