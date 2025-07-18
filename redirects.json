@@ -1,8 +1,17 @@
 {
+  "defaultRedirect": "https://gemini.google.com/",
   "titleFilters": [
-    { "searchTerm": "youtube", "redirectTo": "https://www.youtube.com" }
+    {
+      "searchTerm": "warhammer",
+      "redirectTo": "https://www.youtube.com",
+      "reason": "Don't waste your time on WarHammer for god's sake, it's all made up!!"
+    }
   ],
   "channelFilters": [
-    { "user": "guru", "redirectTo": "https://www.youtube.com/" }
+    {
+      "user": "Luetin09",
+      "redirectTo": "https://www.youtube.com/",
+      "reason": "Don't waste your time on WarHammer for god's sake, it's all made up!!"
+    }
   ]
 }
