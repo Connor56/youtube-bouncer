@@ -23,7 +23,7 @@ async function getRedirects() {
  * @param {string} videoTitle - The title of the video
  * @param {string} channelName - The name of the channel
  */
-async function checkRedirects(videoTitle, channelName) {
+async function checkForARedirect(videoTitle, channelName) {
   const titleFilters = redirects.titleFilters;
   const channelFilters = redirects.channelFilters;
 
@@ -73,7 +73,7 @@ function loadBlockerModal(redirectReason) {
   modal.innerHTML = `
     <div style="text-align: center; padding: 20px;">
       <h2>Redirecting...</h2>
-      <p>Reason: ${redirectReason}</p>
+      <p>${redirectReason}</p>
     </div>
   `;
   document.body.appendChild(modal);
@@ -86,23 +86,17 @@ function getInfo() {
 
   const bothElementsLoadedinDOM = videoTitleElement && channelNameElement;
 
-  console.log("bothElementsLoadedinDOM", bothElementsLoadedinDOM);
-
   if (bothElementsLoadedinDOM) {
-    // clearInterval(checkInterval);
-
     const videoTitle = videoTitleElement.innerText;
     const channelName = channelNameElement.innerText;
 
-    checkRedirects(videoTitle, channelName);
+    checkForARedirect(videoTitle, channelName);
 
-    console.log(`Video Title: ${videoTitle}`);
-    console.log(`Channel: ${channelName}`);
-    console.log("Checker wasn't stopped.");
+    console.log("videoTitle", videoTitle);
+    console.log("channelName", channelName);
   }
 }
 
-// Get the redirects loaded in immediately
 getRedirects();
 
-const checkInterval = setInterval(getInfo, 500); // Check every 500ms
+const checkInterval = setInterval(getInfo, 2000);
