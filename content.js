@@ -80,6 +80,12 @@ function loadBlockerModal(redirectReason) {
 }
 
 function getInfo() {
+  const isWatchPage = /youtube\.com\/watch/.test(window.location.href);
+  if (!isWatchPage) {
+    console.log("not a watch page");
+    return;
+  }
+
   // selectors for Youtube video title and channel name
   const videoTitleElement = document.querySelector("h1.ytd-watch-metadata yt-formatted-string");
   const channelNameElement = document.querySelector("ytd-channel-name a.yt-simple-endpoint");
