@@ -1,4 +1,5 @@
 let redirects;
+let pageHasBeenChecked = false;
 
 /**
  * Get the redirects from the redirects.json file
@@ -50,8 +51,9 @@ async function checkRedirects(videoTitle, channelName) {
     loadBlockerModal(redirectReason);
 
     setTimeout(() => {
+      pageHasBeenChecked = false;
       window.location.href = redirectTo;
-    }, 2000);
+    }, 4000);
   }
 }
 
@@ -98,6 +100,7 @@ function getInfo() {
     console.log(`Video Title: ${videoTitle}`);
     console.log(`Channel: ${channelName}`);
     console.log("Checker wasn't stopped.");
+    pageHasBeenChecked = true;
   }
 }
 
