@@ -1,5 +1,4 @@
 let redirects;
-let pageHasBeenChecked = false;
 
 /**
  * Get the redirects from the redirects.json file
@@ -100,7 +99,6 @@ function getInfo() {
     console.log(`Video Title: ${videoTitle}`);
     console.log(`Channel: ${channelName}`);
     console.log("Checker wasn't stopped.");
-    pageHasBeenChecked = true;
   }
 }
 
