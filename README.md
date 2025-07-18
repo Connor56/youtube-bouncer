@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/Connor56/bare-bones/assets/34070858/1fbdf7f1-a722-46d3-9eb3-b84156377b2c" />
+  <img src="https://github.com/user-attachments/assets/cd434117-d409-4f04-9740-815b6cd9dc12" width=500 height=500/>
 </p>
 
 # YouTube Bouncer
@@ -16,9 +16,3 @@ A Chrome Extension that helps you stay productive by redirecting you away from d
 # How It Works
 
 The extension monitors YouTube video pages and checks the video title and channel name against your configured filters. When it detects content you've marked as distracting, it automatically redirects you away from that page, helping you maintain focus and avoid falling into unproductive viewing patterns.
-
-### Preview:
-
-<p align="center">
-  <img src="https://github.com/Connor56/bare-bones/assets/34070858/825ea288-0bb4-44d7-a738-1faf15948d83">
-</p>
