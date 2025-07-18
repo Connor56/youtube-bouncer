@@ -57,12 +57,25 @@ async function checkRedirects(videoTitle, channelName) {
 
 function loadBlockerModal(redirectReason) {
   const modal = document.createElement("div");
+  modal.style.position = "fixed";
+  modal.style.top = "0";
+  modal.style.left = "0";
+  modal.style.width = "100%";
+  modal.style.height = "100%";
+  modal.style.backgroundColor = "rgba(0,0,0,0.8)";
+  modal.style.zIndex = "99999";
+  modal.style.display = "flex";
+  modal.style.justifyContent = "center";
+  modal.style.alignItems = "center";
+  modal.style.color = "white";
+  modal.style.fontSize = "2em";
   modal.innerHTML = `
-    <div class="modal">
+    <div style="text-align: center; padding: 20px;">
       <h2>Redirecting...</h2>
-      <p>${redirectReason}</p>
+      <p>Reason: ${redirectReason}</p>
     </div>
   `;
+  document.body.appendChild(modal);
 }
 
 function getInfo() {
