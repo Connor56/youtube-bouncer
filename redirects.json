@@ -1,0 +1,8 @@
+{
+  "titleFilters": [
+    { "searchTerm": "youtube", "redirectTo": "https://www.youtube.com" }
+  ],
+  "channelFilters": [
+    { "user": "guru", "redirectTo": "https://www.youtube.com/" }
+  ]
+}
