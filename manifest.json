@@ -9,7 +9,7 @@
   "permissions": ["activeTab"],
   "content_scripts": [
     {
-      "matches": ["*://*.youtube.com/watch*"],
+      "matches": ["*://*.youtube.com/*"],
       "js": ["content.js"]
     }
   ],
