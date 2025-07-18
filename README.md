@@ -2,25 +2,23 @@
   <img src="https://github.com/Connor56/bare-bones/assets/34070858/1fbdf7f1-a722-46d3-9eb3-b84156377b2c" />
 </p>
 
-# Bare-Bones
+# YouTube Bouncer
 
-The bare-bones Chrome Extension set-up. A solid, simple foundation to build and learn from.
+A Chrome Extension that helps you stay productive by redirecting you away from distracting YouTube content.
 
 # Features
 
-- Popup action from the app tray, with a button for passing a message to a background service worker.
-- Background service worker for transmitting popup's message to a content script on the currently active tab.
-- Content script for receiving popup's message via the background service worker and changing the page background to yellow.
-- Manifest that supports the above features.
+- Automatically detects YouTube video titles and channel names that match your configured filters
+- Redirects you away from videos and channels you've identified as time-wasters
+- Simple JSON configuration to specify which content to avoid
+- Works seamlessly in the background while browsing YouTube
 
-# Tutorial
+# How It Works
 
-If you're interested in seeing how this extension was built, you can follow my [tutorial on medium](https://medium.com/@dr.connor/how-to-build-a-basic-chrome-extension-8e6b054caca6).
+The extension monitors YouTube video pages and checks the video title and channel name against your configured filters. When it detects content you've marked as distracting, it automatically redirects you away from that page, helping you maintain focus and avoid falling into unproductive viewing patterns.
 
 ### Preview:
-<p align="center">
-<a href="https://medium.com/@dr.connor/how-to-build-a-basic-chrome-extension-8e6b054caca6">
-  <img src="https://github.com/Connor56/bare-bones/assets/34070858/825ea288-0bb4-44d7-a738-1faf15948d83">
-</a>
-</p>
 
+<p align="center">
+  <img src="https://github.com/Connor56/bare-bones/assets/34070858/825ea288-0bb4-44d7-a738-1faf15948d83">
+</p>
