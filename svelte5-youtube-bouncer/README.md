@@ -171,8 +171,6 @@ module.exports = {
 </div>
 ```
 
-![alt text](image.png)
-
 ---
 
 ## 🧑‍💻 Development Scripts
