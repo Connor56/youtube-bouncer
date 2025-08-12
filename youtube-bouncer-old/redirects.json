@@ -1,0 +1,71 @@
+{
+  "defaultRedirect": "https://gemini.google.com/",
+  "titleFilters": [
+    {
+      "searchTerm": "warhammer",
+      "redirectTo": "https://course.fast.ai/",
+      "reason": "Don't waste your time on WarHammer for god's sake, it's all made up!!"
+    },
+    {
+      "searchTerm": "armwrestling",
+      "reason": "Arm wrestling is stupid, SvelteKit can make you a millionaire.",
+      "redirectTo": "https://svelte.dev/docs/kit/introduction"
+    },
+    {
+      "searchTerm": "Usyk",
+      "reason": "Usyk is a great fighter, but he's not a great data scientist.",
+      "redirectTo": "https://course.fast.ai/"
+    },
+    {
+      "searchTerm": "boxing",
+      "reason": "Boxing is stupid, SvelteKit can make you a millionaire.",
+      "redirectTo": "https://svelte.dev/docs/kit/introduction"
+    },
+    {
+      "searchTerm": "UFC",
+      "reason": "UFC is a great sport, but it's not going to make you rich.",
+      "redirectTo": "https://course.fast.ai/"
+    },
+    {
+      "searchTerm": "MMA",
+      "reason": "MMA is a great sport, but it's not going to make you rich.",
+      "redirectTo": "https://course.fast.ai/"
+    }
+  ],
+  "channelFilters": [
+    {
+      "user": "Luetin09",
+      "redirectTo": "https://course.fast.ai/",
+      "reason": "Don't waste your time on WarHammer for god's sake, it's all made up!! Deep learning is cooler."
+    },
+    {
+      "user": "World Armwrestling League",
+      "reason": "Arm wrestling is stupid, SvelteKit can make you a millionaire.",
+      "redirectTo": "https://svelte.dev/docs/kit/introduction"
+    },
+    {
+      "user": "Tony Lapidus Impressions",
+      "reason": "Yes, they're funny, but they waste so much time. Waste time learning deep learning.",
+      "redirectTo": "https://course.fast.ai/"
+    },
+    {
+      "user": "Programmers are also human",
+      "reason": "Yes, he's very funny, but you should be doing some real programming."
+    },
+    {
+      "user": "TNT Sports",
+      "reason": "You are not a fighter, win by becoming an incredible programmer and data scientist",
+      "redirectTo": "https://course.fast.ai/"
+    },
+    {
+      "user": "Invicta",
+      "reason": "Build Rome in your own life. Make it from technology.",
+      "redirectTo": "https://github.com/Connor56/full-stack-gaming"
+    },
+    {
+      "user": "DAZN Boxing",
+      "reason": "You are not a fighter, win by becoming an amazing data scientist",
+      "redirectTo": "https://course.fast.ai/"
+    }
+  ]
+}
